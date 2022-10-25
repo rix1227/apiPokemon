@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="/images/icono.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <form action="" onsubmit="searchPokemon(event)">
+      <input type="text" name="pokemon" autocomplete="off">
+    </form>
+    
+    <div data-poke-card class="poke-card">
+      <div data-poke-name>Pokedex</div>
+    <div data-poke-img-container class="img-container">
+        <img data-poke-img class="poke-img" src="/images/poke-shadow.png" alt="poke-shadow">
+    </div>
+    <div data-poke-id></div>
+    <div data-poke-types class="poke-types"></div>
+    <div data-poke-stats class="poke-stats"></div>
+  </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
